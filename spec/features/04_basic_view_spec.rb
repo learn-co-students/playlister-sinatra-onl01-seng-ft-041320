@@ -82,12 +82,12 @@ describe "Playlister Basics" do
         expect(page.status_code).to eq(200)
       end
 
-      it "displays the song's artist" do
-        expect(page).to have_content(artist_name)
-      end
-
       it "displays the song's genres" do
         expect(page).to have_content(genre_name)
+      end
+
+      it "displays the song's artist" do
+        expect(page).to have_content(artist_name)
       end
 
       it "contains links to the artist's show page" do
